@@ -4,13 +4,17 @@
 header {
   position: fixed;
   z-index: 10;
-  width: 100%;
+  width: 90%;
   display: flex;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background: $white;
+  background: #d6cce643;
+  border-radius: 30px;
+  margin: 20px 0;
   backdrop-filter: blur(2.5px);
+  left: 50%;
+  transform: translateX(-50%);
 
   .header__logo {
     display: flex;
@@ -86,8 +90,9 @@ header {
       border: none;
       cursor: pointer;
     }
+
     .header__close {
-        align-self: flex-end;
+      align-self: flex-end;
     }
 
     .header__decor {

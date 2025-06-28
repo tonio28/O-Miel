@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
@@ -44,11 +47,9 @@
         <section id="accueil" class="hero" aria-labelledby="hero-title">
             <div class="container-section">
                 <img class="hero__product" src="./assets/Produit.png"
-                    alt="Pot de miel Ô Miel, produit artisanal de lavande" data-aos="fade-right"
-                    data-aos-duration="1000" />
-                <img class="hero__decor" src="./assets/deco.svg" alt="" aria-hidden="true" data-aos="fade-right"
-                    data-aos-duration="1000" />
-                <div class="hero__content" data-aos="fade-left" data-aos-duration="1000">
+                    alt="Pot de miel Ô Miel, produit artisanal de lavande" />
+                <img class="hero__decor" src="./assets/deco.svg" alt="" aria-hidden="true"  />
+                <div class="hero__content" >
                     <h2 id="hero-title" class="hero__title">Goûtez la Provence, miel de lavande mono-flora</h2>
                     <p class="hero__description">Pur, artisanal, récolté au cœur des champs de Provence, Ô Miel incarne
                         l’essence même du miel naturel. Chaque pot est le fruit d’un travail patient, d’abeilles
@@ -66,9 +67,9 @@
 
         <section id="notre-histoire" class="brand" aria-labelledby="brand-title">
             <div class="container-section">
-                <div class="brand__content" data-aos="fade-down" data-aos-duration="1000">
+                <div class="brand__content">
                     <h2 id="brand-title" class="brand__title">Notre Histoire</h2>
-                    <p class="brand__description">
+                    <p class="brand__description split">
                         Au cœur des collines baignées de soleil et des champs de lavande à perte de vue, <strong>Ô
                             Miel</strong> prend racine.
                         C’est ici, en <strong>Provence</strong>, que nos abeilles butinent librement, portées par le
@@ -87,18 +88,17 @@
                     </p>
                 </div>
                 <img class="brand__image" src="./assets/photo-apiculteur.png"
-                    alt="Champs de lavande en Provence et ruches Ô Miel" data-aos="fade-right"
-                    data-aos-duration="1000" />
+                    alt="Champs de lavande en Provence et ruches Ô Miel" />
             </div>
         </section>
 
         <section id="le-miel" class="product" aria-labelledby="product-title">
             <div class="container-section">
                 <h2 id="product-title" class="product__title">Le Miel</h2>
-                <div class="product__content">
+                <div class="product__content ">
                     <div class="product__features product__features--left">
                         <div class="product__feature">
-                            <img src="./assets/icon-saveur.svg" alt="Icône de fleur" class="product__icon">
+                            <img src="./assets/icon-saveur.svg" alt="Icône de fleur" class="product__icon .fade-up">
                             <h3 class="product__subtitle">Saveur unique</h3>
                             <p class="product__description">Arômes floraux doux, particulièrement agréable au
                                 petit-déjeuner
