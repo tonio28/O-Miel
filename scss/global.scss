@@ -1,14 +1,30 @@
 @use 'reset';
-@use 'variables';
+@use 'variables' as *;
+@use 'mixins';
 
 
 body {
-  background: var(--color-bg);
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-accent);
+h2{
+  font-family: $font-accent;
+  font-size: $font-size-title-desktop;
+}
+h3{
+  font-family: $font-base;
+  font-size: $font-size-subtitle-desktop;
+  font-weight:$font-weight-regular;
+}
+button{
+  font-family: $font-base;
+  font-size: $font-size-button-desktop;
+  font-weight:$font-weight-bold;
+}
+p{
+  font-family: $font-base;
+  font-size: $font-size-button-desktop;
+  font-weight:$font-weight-regular;
 }
 
 .no-scroll {

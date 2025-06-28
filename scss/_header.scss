@@ -2,12 +2,14 @@
 @use 'mixins';
 
 header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   display: flex;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  border-radius: 1.5rem;
-  background: $white-70;
+  background: $white;
   backdrop-filter: blur(2.5px);
 
   .header__logo {

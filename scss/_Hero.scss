@@ -1,0 +1,80 @@
+@use 'variables' as *;
+@use 'mixins';
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12.5rem 6.25rem;
+    position: relative;
+    flex-wrap: wrap;
+
+    &__product {
+        width: 20rem;
+        flex-shrink: 0;
+        z-index: 1;
+    }
+
+    &__decor {
+        position: absolute;
+        max-width: 50rem;
+        left: -250px;
+        z-index: 0;
+    }
+
+    &__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+        z-index: 1;
+    }
+
+    &__title {
+        color: $purple;
+    }
+
+    &__description {
+        max-width: 40rem;
+        color: $black;
+    }
+
+    &__cta {
+        display: flex;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 0.625rem;
+        color: $white;
+        border: 1px solid $purple;
+        background-color: $purple;
+        transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $light-purple;
+            color: $purple;
+            transform: scale(0.95);
+        }
+    }
+
+    @media (max-width: 1150px) {
+        justify-content: center;
+        gap: 20px;
+        padding: 6.25rem;
+
+        &__decor {
+            left: -50px;
+            top: 80px;
+        }
+
+        &__content {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+    }
+}

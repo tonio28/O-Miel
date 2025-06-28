@@ -11,11 +11,14 @@
     <title>Ô Miel - Miel de Lavande Artisanal en Provence</title>
     <link rel="canonical" href="https://tonio28.github.io/O-Miel/">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header" role="banner">
-        <a href="/" class="header__logo" aria-label="Accueil Ô Miel">
+        <a href="#accueil" class="header__logo" aria-label="Accueil Ô Miel">
             <img class="logo__img" src="./assets/Logo.png" alt="Logo Ô Miel">
             <h1 class="logo__title">Ô MIEL</h1>
         </a>
@@ -35,10 +38,21 @@
         </nav>
     </header>
 
-
     <main>
-        <section class="hero" aria-labelledby="hero-title">
-
+        <section id="accueil" class="hero" aria-labelledby="hero-title">
+            <img class="hero__product" src="./assets/Produit.png"
+                alt="Pot de miel Ô Miel, produit artisanal de lavande" />
+            <img class="hero__decor" src="./assets/deco.svg" alt="" aria-hidden="true" />
+            <div class="hero__content">
+                <h2 id="hero-title" class="hero__title">Goûtez la Provence, miel de lavande mono-flora</h2>
+                <p class="hero__description">Pur, artisanal, récolté au cœur des champs de Provence, Ô Miel incarne
+                    l’essence même du miel naturel. Chaque pot est le fruit d’un travail patient, d’abeilles butinant
+                    exclusivement la lavande en fleur, et d’un savoir-faire local transmis avec passion. Sa texture
+                    onctueuse, sa douceur florale et son parfum délicat font de ce miel une expérience gustative unique,
+                    authentique et profondément enracinée dans le terroir provençal.</p>
+                <button class="hero__cta" aria-label="Découvrez notre miel de lavande artisanal">Découvrez notre
+                    miel</button>
+            </div>
         </section>
 
 
