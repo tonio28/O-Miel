@@ -25,4 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
           document.body.classList.remove('no-scroll');
         });
     });
+
+
+const faqButtons = document.querySelectorAll('.faq__question');
+
+faqButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const answerId = button.getAttribute('aria-controls');
+    const answer = document.getElementById(answerId);
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', !expanded);
+    answer.hidden = expanded;
+  });
+});
+  
+    document.querySelectorAll('.faq__question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      });
+    });
 });
