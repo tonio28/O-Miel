@@ -1,0 +1,118 @@
+@use 'variables' as *;
+
+:root {
+    --border-size: 3px;
+}
+
+.testimonials {
+    display: flex;
+    padding: 3rem 6.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: $offwhite;
+
+    &__title {
+        color: $purple;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    @media (max-width: 1150px) {
+        padding: 4rem 2rem;
+    }
+
+    @media (max-width: 1150px) {
+        &__list {
+            flex-direction: column;
+        }
+    }
+}
+
+.testimonial {
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1.15;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $orange;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        z-index: -1;
+    }
+
+    &__hex {
+        position: relative;
+        top: var(--border-size);
+        left: var(--border-size);
+        width: calc(100% - calc(var(--border-size) * 2));
+        height: calc(100% - calc(var(--border-size) * 2));
+        background: $offwhite;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 8px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            stroke: $orange;
+            fill: $beige;
+
+            &.empty {
+                fill: none;
+            }
+        }
+    }
+
+    &__quote {
+        font-style: italic;
+        font-size: 1rem;
+        color: #222;
+    }
+
+    &__author {
+        font-style: italic;
+        font-family: 'Instrument Serif', serif;
+        font-size: 0.9rem;
+    }
+
+}
