@@ -30,7 +30,7 @@ button, input, select, textarea {
   font: inherit;
 }
 
-body {
+body, main {
   overflow-x: hidden;
 }
 
@@ -545,6 +545,7 @@ header .header.open {
   padding: 1rem;
   cursor: pointer;
   display: flex;
+  color: #000000;
   justify-content: space-between;
 }
 .faq__answer {
