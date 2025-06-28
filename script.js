@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const burgerButton = document.querySelector('.header__burger');
   const nav = document.querySelector('.header__nav');
+  const header = document.querySelector('.header');
   const closeButton = document.querySelector('.header__close');
   const faqButtons = document.querySelectorAll('.faq__question');
 
   const toggleNav = (open) => {
     burgerButton.setAttribute('aria-expanded', open);
-    nav.classList.toggle('open', open);
+    header.classList.toggle('open', open);
     document.body.classList.toggle('no-scroll', open);
   };
 

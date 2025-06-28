@@ -153,6 +153,10 @@ header .header__close,
 header .header__decor {
   display: none;
 }
+header .header.open {
+  width: 100%;
+  margin: 0;
+}
 @media (max-width: 768px) {
   header .header__nav {
     position: fixed;
@@ -168,7 +172,7 @@ header .header__decor {
     transition: transform 0.3s ease;
     display: flex;
   }
-  header .header__nav.open {
+  header.open .header__nav {
     transform: translateX(0);
   }
   header .header__burger,
@@ -191,7 +195,7 @@ header .header__decor {
 
 .hero {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 .hero .container-section {
   max-width: 1500px;
