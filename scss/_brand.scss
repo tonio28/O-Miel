@@ -1,0 +1,46 @@
+@use 'variables' as *;
+@use 'mixins';
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 0 6rem ;
+    background:$offwhite;
+    &__content {
+        max-width: 600px;
+    }
+
+    &__title {
+        color: $purple;
+    }
+
+    &__description {
+        color: $black;
+
+
+    }
+
+    &__image {
+        max-width: 500px;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    @media (max-width: 1150px) {
+        flex-direction: column-reverse;
+        padding: 4rem 2rem;
+        gap: 2rem;
+
+        &__content {
+            max-width: 100%;
+        }
+
+        &__image {
+            max-width: 100%;
+            flex-shrink: 0;
+
+        }
+    }
+}

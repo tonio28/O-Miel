@@ -10,6 +10,7 @@ body {
 h2{
   font-family: $font-accent;
   font-size: $font-size-title-desktop;
+  font-weight: normal;
 }
 h3{
   font-family: $font-base;
@@ -25,6 +26,12 @@ p{
   font-family: $font-base;
   font-size: $font-size-button-desktop;
   font-weight:$font-weight-regular;
+}
+
+strong {
+  font-family: $font-base;
+  font-weight: $font-weight-bold;
+  color: $purple;
 }
 
 .no-scroll {
