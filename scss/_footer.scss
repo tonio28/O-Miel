@@ -2,7 +2,14 @@
 @use 'mixins';
 
 .footer {
+    position: relative;
     background: #fdfcf8;
+    z-index: 2;
+    .container-section {
+        max-width: 1500px;
+        margin: auto;
+    max-width: 1500px;
+    margin: auto;
     text-align: center;
     padding: 2em;
     display: flex;
@@ -11,8 +18,10 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
+    }
 
-    &__nav{
+    &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,23 +29,24 @@
         gap: 20px;
         flex-wrap: wrap;
     }
+
     &__logo {
         display: flex;
         align-items: center;
         gap: 1.25rem;
-    
+
         .logo__img {
-          width: 40px;
+            width: 40px;
         }
-    
+
         .logo__title {
-          color: #3D3D3D;
-          font-family: Platypi;
-          font-size: 2rem;
-          font-weight: 500;
+            color: #3D3D3D;
+            font-family: Platypi;
+            font-size: 2rem;
+            font-weight: 500;
         }
-      }
-    
+    }
+
 
     &__links,
     &__actions {
@@ -74,8 +84,9 @@
         font-size: 0.9rem;
         color: #555;
     }
+
     @media (max-width: 768px) {
-        &__nav{
+        &__nav {
             justify-content: center;
         }
     }

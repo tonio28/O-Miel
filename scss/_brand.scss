@@ -2,12 +2,19 @@
 @use 'mixins';
 
 .brand {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-    padding: 0 6rem ;
-    background:$offwhite;
+    background: $offwhite;
+
+    .container-section {
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 0 6rem;
+
+    }
+
     &__content {
         max-width: 600px;
     }
@@ -29,10 +36,11 @@
     }
 
     @media (max-width: 1150px) {
+        .container-section {
         flex-direction: column-reverse;
         padding: 4rem 2rem;
         gap: 2rem;
-
+        }
         &__content {
             max-width: 100%;
         }

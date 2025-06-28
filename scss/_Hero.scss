@@ -2,13 +2,16 @@
 @use 'mixins';
 
 .hero {
+    .container-section {
+        max-width: 1500px;
+        margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12.5rem 6.25rem;
     position: relative;
     flex-wrap: wrap;
-
+    }
     &__product {
         width: 20rem;
         flex-shrink: 0;
@@ -60,9 +63,11 @@
     }
 
     @media (max-width: 1150px) {
+        .container-section {
         justify-content: center;
         gap: 100px;
         padding: 4rem 2rem;
+        }
 
         &__decor {
             left: -50px;

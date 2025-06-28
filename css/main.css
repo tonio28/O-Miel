@@ -159,7 +159,9 @@ header .header__decor {
   }
 }
 
-.hero {
+.hero .container-section {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,7 +213,7 @@ header .header__decor {
   transform: scale(0.95);
 }
 @media (max-width: 1150px) {
-  .hero {
+  .hero .container-section {
     justify-content: center;
     gap: 100px;
     padding: 4rem 2rem;
@@ -231,12 +233,16 @@ header .header__decor {
 }
 
 .brand {
+  background: #FFFDF9;
+}
+.brand .container-section {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
   padding: 0 6rem;
-  background: #FFFDF9;
 }
 .brand__content {
   max-width: 600px;
@@ -253,7 +259,7 @@ header .header__decor {
   border-radius: 1rem;
 }
 @media (max-width: 1150px) {
-  .brand {
+  .brand .container-section {
     flex-direction: column-reverse;
     padding: 4rem 2rem;
     gap: 2rem;
@@ -267,7 +273,9 @@ header .header__decor {
   }
 }
 
-.product {
+.product .container-section {
+  max-width: 1500px;
+  margin: auto;
   padding: 6rem;
   display: flex;
   flex-direction: column;
@@ -328,7 +336,7 @@ header .header__decor {
   z-index: 0;
 }
 @media (max-width: 1150px) {
-  .product {
+  .product .container-section {
     padding: 4rem 2rem;
   }
   .product__content {
@@ -350,12 +358,16 @@ header .header__decor {
 }
 
 .testimonials {
+  background: #FFFDF9;
+}
+.testimonials .container-section {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   padding: 3rem 6.25rem;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background: #FFFDF9;
 }
 .testimonials__title {
   color: #5D4A81;
@@ -382,7 +394,7 @@ header .header__decor {
   gap: 50px;
 }
 @media (max-width: 1150px) {
-  .testimonials {
+  .testimonials .container-section {
     padding: 4rem 2rem;
   }
 }
@@ -452,6 +464,10 @@ header .header__decor {
 
 .faq {
   position: relative;
+}
+.faq .container-section {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   padding: 3rem 6.25rem;
   flex-direction: column;
@@ -514,7 +530,7 @@ header .header__decor {
   right: -220px;
 }
 @media (max-width: 1150px) {
-  .faq {
+  .faq .container-section {
     padding: 4rem 2rem;
   }
   .faq .faq__decor {
@@ -531,7 +547,15 @@ header .header__decor {
 }
 
 .footer {
+  position: relative;
   background: #fdfcf8;
+  z-index: 2;
+}
+.footer .container-section {
+  max-width: 1500px;
+  margin: auto;
+  max-width: 1500px;
+  margin: auto;
   text-align: center;
   padding: 2em;
   display: flex;

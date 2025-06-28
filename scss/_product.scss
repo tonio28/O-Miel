@@ -1,11 +1,15 @@
 @use 'variables' as *;
 
 .product {
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
+    .container-section {
+        max-width: 1500px;
+        margin: auto;
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
 
     &__title {
         color: $purple;
@@ -71,7 +75,9 @@
     }
 
     @media (max-width: 1150px) {
-            padding: 4rem 2rem;
+        .container-section {
+        padding: 4rem 2rem;
+        }
         &__content {
             flex-direction: column;
             align-items: center;

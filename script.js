@@ -46,4 +46,7 @@ faqButtons.forEach(button => {
         item.classList.toggle('active');
       });
     });
+
+    AOS.init({ once: true, offset: 100 });
+
 });
