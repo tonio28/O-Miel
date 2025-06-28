@@ -1,9 +1,26 @@
- :root {
-    --color-primary: #b36c36;
-    --color-secondary: #c58a54;
-    --color-bg: #fffaf5;
-    --color-text: #333;
-  
-    --font-base: 'Avenir', sans-serif;
-    --font-accent: 'Instrument Serif', serif;
-  }
+:root {
+
+}
+
+$font-base: 'Avenir', sans-serif;
+$font-accent: 'Instrument Serif', serif;
+$font-size-title-desktop: 48px;
+$font-size-subtitle-desktop: 24px;
+$font-size-text-desktop: 16px;
+$font-size-button-desktop: 20px;
+$font-weight-bold: 900;
+$font-weight-regular: 400;
+$font-style-italic: italic;
+
+$gray: #3D3D3D;
+$purple: #5D4A81;
+$orange: #C58A54;
+$black: #000000;
+$beige: #F3DAC3;
+$ivory: #F0F2E0;
+$sage: #B5C8A3;
+$dark-purple: #422E56;
+$offwhite: #FFFDF9;
+$light-purple: #EBE2F5;
+$white: #FFFFFF;
+$white-70: rgba(255, 255, 255, 0.7);

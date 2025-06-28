@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ô Miel, miel de lavande artisanal récolté en Provence. Découvrez notre marque, nos engagements et nos produits de qualité.">
+    <meta name="description"
+        content="Ô Miel, miel de lavande artisanal récolté en Provence. Découvrez notre marque, nos engagements et nos produits de qualité.">
     <meta name="keywords" content="miel, lavande, Provence, artisanal, apiculture, naturel">
     <meta name="author" content="Ô Miel">
     <title>Ô Miel - Miel de Lavande Artisanal en Provence</title>
-    <link rel="canonical" href="https://ton-utilisateur.github.io/ton-repo/">
+    <link rel="canonical" href="https://tonio28.github.io/O-Miel/">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <header>
-        <!-- Navigation -->
+    <header class="header" role="banner">
+        <a href="/" class="header__logo" aria-label="Accueil Ô Miel">
+            <img class="logo__img" src="./assets/Logo.png" alt="Logo Ô Miel">
+            <h1 class="logo__title">Ô MIEL</h1>
+        </a>
+        <button class="header__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="header-menu">
+            <img src="./assets/buger-icon.svg" alt="Icône menu burger">
+        </button>
+        <nav id="header-menu" class="header__nav" role="navigation" aria-label="Navigation principale">
+            <button class="header__close" aria-label="Fermer le menu">
+                <img src="./assets/close-icon.svg" alt="Fermer le menu">
+            </button>
+            <a class="nav__link" href="#accueil">Accueil</a>
+            <a class="nav__link" href="#notre-histoire">Notre Histoire</a>
+            <a class="nav__link" href="#le-miel">Le Miel</a>
+            <a class="nav__link" href="#avis">Avis</a>
+            <a class="nav__link" href="#faq">FAQ</a>
+            <img src="./assets/deco-nav.svg" alt="" aria-hidden="true" class="header__decor" />
+        </nav>
     </header>
 
+
     <main>
-        <section class="hero">
-            <!-- Visuel impactant + accroche -->
+        <section class="hero" aria-labelledby="hero-title">
+
         </section>
 
+
         <section class="brand">
-            <!-- Présentation de la marque -->
+
         </section>
 
         <section class="product">
-            <!-- Présentation du produit -->
+
         </section>
 
         <section class="testimonials">
-            <!-- Avis client -->
+
         </section>
 
         <section class="faq">
-            <!-- Foire aux questions -->
+
         </section>
     </main>
 
     <footer>
-        <!-- Footer -->
+
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
