@@ -4,9 +4,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   min-height: 100vh;
@@ -32,6 +29,7 @@ button, input, select, textarea {
 
 body, main {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h2 {
@@ -655,7 +653,7 @@ header .header.open {
 }
 .footer__copyright {
   font-size: 0.9rem;
-  color: #555;
+  color: #422E56;
 }
 @media (max-width: 768px) {
   .footer__nav {
