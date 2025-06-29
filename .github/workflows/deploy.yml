@@ -14,7 +14,7 @@ jobs:
 
       - name: Build project
         run: |
-          # Place ici ta commande de build si besoin, sinon supprime cette section
+          # Remplace cette ligne par ta commande de build si nécessaire
           echo "Build step"
 
       - name: Deploy to production branch
@@ -23,7 +23,10 @@ jobs:
           git config user.email "a.chauveau87@gmail.com"
           git checkout --orphan production
           git rm -rf .
-          cp index.html css/main.min.css script.min.js -r assets .
+          cp index.html . 
+          cp -r css .
+          cp script.min.js .
+          cp -r assets .
           git add .
           git commit -m "Deploy production"
           git push -f origin production
