@@ -14,19 +14,24 @@ jobs:
 
       - name: Build project
         run: |
-          # Remplace cette ligne par ta commande de build si nécessaire
           echo "Build step"
+
+      - name: Create production branch content
+        run: |
+          mkdir prod-deploy
+          cp index.html prod-deploy/
+          cp -r css prod-deploy/
+          cp script.min.js prod-deploy/
+          cp -r assets prod-deploy/
 
       - name: Deploy to production branch
         run: |
           git config user.name "tonio28"
           git config user.email "a.chauveau87@gmail.com"
           git checkout --orphan production
-          git rm -rf .
-          cp index.html . 
-          cp -r css .
-          cp script.min.js .
-          cp -r assets .
+          rm -rf *
+          mv prod-deploy/* .
+          rm -rf prod-deploy
           git add .
           git commit -m "Deploy production"
           git push -f origin production
