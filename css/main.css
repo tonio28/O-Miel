@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;
@@ -94,6 +97,29 @@ strong {
   transform: translate(0);
 }
 
+@media (max-width: 768px) {
+  h2 {
+    font-family: "Instrument Serif", serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  h3 {
+    font-family: "Avenir", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  button {
+    font-family: "Avenir", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  p {
+    font-family: "Avenir", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
 header {
   position: fixed;
   z-index: 10;
@@ -120,7 +146,6 @@ header .header__logo .logo__img {
 header .header__logo .logo__title {
   color: #3D3D3D;
   font-family: Platypi;
-  font-size: 2rem;
   font-weight: 500;
 }
 header .header__nav {
@@ -262,11 +287,6 @@ header .header.open {
     width: 90%;
   }
 }
-@media (max-width: 768px) {
-  .hero {
-    padding: 2rem;
-  }
-}
 
 .brand {
   background: #FFFDF9;
@@ -348,11 +368,9 @@ header .header.open {
   height: auto;
 }
 .product__subtitle {
-  font-size: 1.5rem;
   color: #5D4A81;
 }
 .product__description {
-  font-size: 1rem;
   color: #000000;
   max-width: 250px;
 }
@@ -386,6 +404,9 @@ header .header.open {
   }
   .product__description {
     max-width: 100%;
+  }
+  .product .product__decor {
+    max-width: 22rem;
   }
 }
 

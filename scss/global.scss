@@ -56,3 +56,28 @@ strong {
   opacity: 1;
   transform: translate(0);
 }
+
+@media (max-width: 768px) {
+h2{
+  font-family: $font-accent;
+  font-size: $font-size-title-mobile;
+  font-weight: normal;
+font-style: $font-style-italic;
+}
+
+h3{
+  font-family: $font-base;
+  font-size: $font-size-subtitle-mobile;
+  font-weight:$font-weight-bold;
+}
+
+button{
+  font-family: $font-base;
+  font-size: $font-size-button-mobile;
+  font-weight:$font-weight-bold;
+}
+p{
+  font-family: $font-base;
+  font-size: $font-size-button-mobile;
+  font-weight:$font-weight-regular;
+}}
