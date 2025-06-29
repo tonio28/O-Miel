@@ -1,37 +1,32 @@
-name: Deploy to GitHub Pages
+name: "Deploy to GitHub Pages"
 
 on:
   push:
     branches:
+      - master
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - name: Build project
-        run: |
-          echo "Build step"
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18"
 
-      - name: Create production branch content
-        run: |
-          mkdir prod-deploy
-          cp index.html prod-deploy/
-          cp -r css prod-deploy/
-          cp script.min.js prod-deploy/
-          cp -r assets prod-deploy/
+      - name: Install dependencies
+        run: npm install
 
-      - name: Deploy to production branch
-        run: |
-          git config user.name "tonio28"
-          git config user.email "a.chauveau87@gmail.com"
-          git checkout --orphan production
-          rm -rf *
-          mv prod-deploy/* .
-          rm -rf prod-deploy
-          git add .
-          git commit -m "Deploy production"
-          git push -f origin production
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
