@@ -172,6 +172,23 @@ header .header__nav .nav__link:hover {
   color: #5D4A81;
   transform: scale(1.05);
 }
+header .header__cta {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  color: #FFFFFF;
+  border: 1px solid #5D4A81;
+  background-color: #5D4A81;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+header .header__cta:hover {
+  background-color: #EBE2F5;
+  color: #5D4A81;
+  transform: scale(0.95);
+}
 header .header__burger,
 header .header__close,
 header .header__decor {
@@ -428,6 +445,24 @@ header.open {
   position: absolute;
   max-width: 25rem;
   z-index: 0;
+}
+.product__cta {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  color: #FFFFFF;
+  border: 1px solid #5D4A81;
+  background-color: #5D4A81;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  width: fit-content;
+}
+.product__cta:hover {
+  background-color: #EBE2F5;
+  color: #5D4A81;
+  transform: scale(0.95);
 }
 @media (max-width: 1150px) {
   .product .container-section {

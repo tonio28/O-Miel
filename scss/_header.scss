@@ -55,7 +55,26 @@ header {
         transform: scale(1.05);
       }
     }
+
   }
+  .header__cta {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.625rem;
+    color: $white;
+    border: 1px solid $purple;
+    background-color: $purple;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $light-purple;
+        color: $purple;
+        transform: scale(0.95);
+    }
+}
 
   .header__burger,
   .header__close,
@@ -63,7 +82,7 @@ header {
     display: none;
   }
 
-&.open {
+  &.open {
     width: 100%;
     margin: 0;
   }
