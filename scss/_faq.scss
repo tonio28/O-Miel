@@ -86,13 +86,16 @@
         .faq__decor {
             right: -300px;
         }
+        .faq__list{
+            padding: 0;
+        }
     }
 
     @media (max-width: 768px) {
         .faq__decor {
             position: absolute;
             max-width: 25rem;
-            bottom: -22%;
+            bottom: -25%;
             right: -230px;
         }
     }

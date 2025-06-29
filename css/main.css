@@ -177,11 +177,11 @@ header .header__close,
 header .header__decor {
   display: none;
 }
-header .header.open {
+header.open {
   width: 100%;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .header__nav {
     position: fixed;
     top: 0;
@@ -221,6 +221,7 @@ header .header.open {
   header .header__decor {
     display: block;
     position: absolute;
+    width: 250px;
     bottom: -10%;
     right: -10%;
   }
@@ -263,6 +264,7 @@ header .header.open {
 }
 .hero__title {
   color: #5D4A81;
+  width: 100%;
 }
 .hero__description {
   max-width: 40rem;
@@ -515,6 +517,11 @@ header .header.open {
   .testimonials__list {
     flex-direction: column;
   }
+  .testimonials__title {
+    color: #5D4A81;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .testimonial {
@@ -650,12 +657,15 @@ header .header.open {
   .faq .faq__decor {
     right: -300px;
   }
+  .faq .faq__list {
+    padding: 0;
+  }
 }
 @media (max-width: 768px) {
   .faq .faq__decor {
     position: absolute;
     max-width: 25rem;
-    bottom: -22%;
+    bottom: -25%;
     right: -230px;
   }
 }

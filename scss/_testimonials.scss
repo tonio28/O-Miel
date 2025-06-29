@@ -72,6 +72,11 @@
         &__list {
             flex-direction: column;
         }
+        &__title {
+            color: $purple;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
