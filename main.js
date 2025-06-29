@@ -34,6 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
       button.parentElement.classList.toggle('active');
     });
   });
+  
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.modal').classList.add('open');
+    });
+  });
+
+  document.querySelector('.modal__close').addEventListener('click', () => {
+    document.querySelector('.modal').classList.remove('open');
+  });
 
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -71,14 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.fonts.ready.then(() => {
     gsap.set(".split", { opacity: 1 });
-  
+
     gsap.utils.toArray('.split').forEach(el => {
       let splitInstance = SplitText.create(el, {
         type: "words,lines",
         linesClass: "line",
         autoSplit: true
       });
-  
+
       gsap.from(splitInstance.lines, {
         yPercent: 100,
         opacity: 0,
@@ -94,5 +104,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   ScrollTrigger.refresh();
-  
+
 });

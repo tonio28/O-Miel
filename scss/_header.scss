@@ -85,11 +85,13 @@ header {
   &.open {
     width: 100%;
     margin: 0;
+    overflow: visible;
   }
 
 
   @media (max-width: 992px) {
 
+    overflow: hidden;
     .header__nav {
       position: fixed;
       top: 0;

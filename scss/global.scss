@@ -15,7 +15,7 @@ h2{
   font-family: $font-accent;
   font-size: $font-size-title-desktop;
   font-weight: normal;
-font-style: $font-style-italic;
+  font-style: $font-style-italic;
 }
 
 h3{
@@ -24,11 +24,7 @@ h3{
   font-weight:$font-weight-bold;
 }
 
-button{
-  font-family: $font-base;
-  font-size: $font-size-button-desktop;
-  font-weight:$font-weight-bold;
-}
+
 p{
   font-family: $font-base;
   font-size: $font-size-button-desktop;
@@ -74,11 +70,7 @@ h3{
   font-weight:$font-weight-bold;
 }
 
-button{
-  font-family: $font-base;
-  font-size: $font-size-button-mobile;
-  font-weight:$font-weight-bold;
-}
+
 p{
   font-family: $font-base;
   font-size: $font-size-button-mobile;

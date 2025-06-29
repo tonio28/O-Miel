@@ -46,6 +46,13 @@
             font-weight: 500;
         }
     }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content:center ;
+    }
 
 
     &__links,
@@ -80,7 +87,8 @@
         height: 24px;
     }
 
-    &__copyright {
+    &__copyright,
+    &__contact {
         font-size: 0.9rem;
         color: $dark-purple;
     }

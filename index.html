@@ -40,7 +40,7 @@
             <a class="nav__link" href="#avis">Avis</a>
             <a class="nav__link" href="#faq">FAQ</a>
             <img loading="lazy" src="./assets/deco-nav.svg" alt="" aria-hidden="true" class="header__decor" />
-            <a class="header__cta" href="/" aria-label="Acheter notre miel">Acheter notre miel</a>
+            <button class="header__cta open-modal" href="/" aria-label="Acheter notre miel">Acheter notre miel</button>
         </nav>
 
     </header>
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="product__cta" href="/" aria-label="Acheter notre miel">Acheter notre miel</a>
+                <button class="product__cta open-modal"  aria-label="Acheter notre miel">Acheter notre miel</button>
             </div>
 
         </section>
@@ -375,11 +375,11 @@
                 <div class="faq__list">
 
 
-               
+
                     <div class="faq__item">
                         <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1">Où acheter
-                            notre miel ?<img loading="lazy" class="faq__chevron" src="./assets/arrow.svg"
-                                alt="fleche" aria-hidden="true" /></button>
+                            notre miel ?<img loading="lazy" class="faq__chevron" src="./assets/arrow.svg" alt="fleche"
+                                aria-hidden="true" /></button>
                         <div id="faq-answer-1" class="faq__answer" hidden>
                             <p>Le miel est vendu dans tous les supermarchés de Provence et nous visons à exporter dans
                                 toute la France.</p>
@@ -464,19 +464,33 @@
                 </div> -->
                 <div class="footer__actions">
                     <a href="mailto:contact@omiel.com" class="footer__button">Contact</a>
-                    <a href="https://www.instagram.com/omiel_/" class="footer__button" aria-label="Instagram">
+                    <a href="https://www.instagram.com/" class="footer__button" aria-label="Instagram">
                         <img loading="lazy" src="./assets/instagram.svg" alt="" role="presentation" />
                     </a>
                 </div>
             </nav>
-            <div class="footer__copyright">
-                © Ô Miel – Tous droits réservés – Site fait avec amour (et du miel)
+            <div class="footer__info">
+                <span class="footer__contact">Ô Miel – 123 Route des Lavandes – 84000 Avignon, France – Tél : 04 04 04 04 04</span>
+                <span class="footer__copyright">© Ô Miel – Tous droits réservés – Site fait avec amour (et du miel)</span>
+              
             </div>
         </div>
     </footer>
-
-
-
+    <div class="modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-desc" aria-modal="true" hidden>
+        <div class="modal__overlay" tabindex="-1"></div>
+        <div class="modal__content" role="document">
+          <button class="modal__close" aria-label="Fermer la fenêtre">×</button>
+          <h3 id="modal-title">Où acheter notre miel ?</h3>
+          <p id="modal-desc">Notre miel est vendu directement à notre usine :</p>
+          <address>
+            Ô Miel<br>
+            123 Route des Lavandes<br>
+            84000 Avignon, France<br>
+            Tél : <a href="tel:+3340404040404">04 04 04 04 04</a>
+          </address>
+          <p>Vous pouvez aussi le retrouver dans la plupart des supermarchés de Provence au rayon produits locaux et dans les Biocoop de la région Provence.</p>
+        </div>
+      </div>
 </body>
 
 </html>
