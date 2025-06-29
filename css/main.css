@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   font-family: "Avenir", sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 700;
 }
 
@@ -306,7 +306,7 @@ header.open {
   .hero .container-section {
     justify-content: center;
     gap: 50px;
-    padding: 6rem 2rem;
+    padding: 5rem 2rem;
   }
   .hero__decor {
     left: -50px;
