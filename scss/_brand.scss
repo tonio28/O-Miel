@@ -3,6 +3,7 @@
 
 .brand {
     background: $offwhite;
+    position: relative;
 
     .container-section {
         max-width: 1500px;
@@ -32,8 +33,16 @@
     &__image {
         max-width: 500px;
         height: auto;
-        border-radius: 1rem;
+      border-radius: 1rem;
     }
+    &__bee-decor{
+        position: absolute;
+        right:50%;
+        transform: translateX(50%);
+        bottom: 5%;
+        rotate: -20deg;
+    }
+
 
     @media (max-width: 1150px) {
         .container-section {
@@ -49,6 +58,9 @@
             max-width: 100%;
             flex-shrink: 0;
 
+        }
+        &__bee-decor{
+           display: none;
         }
     }
 }

@@ -35,6 +35,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
     &__column {
@@ -43,11 +44,27 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        position: relative;
     }
 
+    &__bee-decor-right{
+        position: absolute;
+        bottom: -100%;  
+    }
+    &__bee-decor-left{
+        position: absolute;
+        top: -100%;
+        transform: scaleX(-1);
+
+    }
     @media (max-width: 1150px) {
         .container-section {
         padding: 4rem 2rem;
+        }
+        &__bee-decor-left,
+        &__bee-decor-right{
+         display: none;
+    
         }
     }
 

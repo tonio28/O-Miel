@@ -4,6 +4,7 @@
 .hero {
     display: flex;
     min-height: 100vh;
+    position: relative;
 
     .container-section {
         max-width: 1500px;
@@ -66,6 +67,11 @@
             transform: scale(0.95);
         }
     }
+    &__bee-decor{
+        position: absolute;
+        right:20%;
+        bottom: 0;
+    }
 
     @media (max-width: 1150px) {
         .container-section {
@@ -88,6 +94,13 @@
         &__content {
             width: 90%;
         }
+        &__bee-decor{
+            width: 160px;
+            position: absolute;
+            right:10%;
+            bottom: 0;
+        }
+        
     }
 
    
