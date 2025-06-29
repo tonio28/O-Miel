@@ -9,6 +9,8 @@ body,main {
 
 }
 
+
+
 h2{
   font-family: $font-accent;
   font-size: $font-size-title-desktop;
@@ -58,6 +60,7 @@ strong {
 }
 
 @media (max-width: 768px) {
+ 
 h2{
   font-family: $font-accent;
   font-size: $font-size-title-mobile;

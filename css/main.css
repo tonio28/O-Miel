@@ -147,6 +147,7 @@ header .header__logo .logo__title {
   color: #3D3D3D;
   font-family: Platypi;
   font-weight: 500;
+  font-size: 2rem;
 }
 header .header__nav {
   display: flex;
@@ -198,6 +199,15 @@ header .header.open {
   header.open .header__nav {
     transform: translateX(0);
   }
+  header .header__logo .logo__img {
+    width: 20px;
+  }
+  header .header__logo .logo__title {
+    color: #3D3D3D;
+    font-family: Platypi;
+    font-weight: 500;
+    font-size: 1rem;
+  }
   header .header__burger,
   header .header__close {
     display: block;
@@ -226,9 +236,10 @@ header .header.open {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12.5rem 6.25rem;
+  padding: 12.5rem 4.25rem;
   position: relative;
   flex-wrap: wrap;
+  width: 100%;
 }
 .hero__product {
   width: 20rem;
@@ -238,7 +249,7 @@ header .header.open {
 .hero__decor {
   position: absolute;
   max-width: 50rem;
-  left: -250px;
+  left: -300px;
   z-index: 0;
 }
 .hero__content {
@@ -276,12 +287,16 @@ header .header.open {
 @media (max-width: 1150px) {
   .hero .container-section {
     justify-content: center;
-    gap: 100px;
-    padding: 4rem 2rem;
+    gap: 50px;
+    padding: 6rem 2rem;
   }
   .hero__decor {
     left: -50px;
-    top: 80px;
+    top: 100px;
+    max-width: 23rem;
+  }
+  .hero__product {
+    width: 10rem;
   }
   .hero__content {
     width: 90%;
@@ -298,7 +313,7 @@ header .header.open {
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  padding: 0 6rem;
+  padding: 8rem 6rem;
 }
 .brand__content {
   max-width: 600px;
@@ -332,7 +347,7 @@ header .header.open {
 .product .container-section {
   max-width: 1500px;
   margin: auto;
-  padding: 6rem;
+  padding: 8rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,11 +417,15 @@ header .header.open {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .product .product__image {
+    max-width: 10rem;
+    z-index: 1;
+  }
   .product__description {
     max-width: 100%;
   }
   .product .product__decor {
-    max-width: 22rem;
+    max-width: 16rem;
   }
 }
 
@@ -421,7 +440,7 @@ header .header.open {
   max-width: 1500px;
   margin: auto;
   display: flex;
-  padding: 3rem 6.25rem;
+  padding: 8rem 6rem;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
@@ -521,16 +540,16 @@ header .header.open {
 
 .faq {
   position: relative;
+  overflow: hidden;
 }
 .faq .container-section {
   max-width: 1500px;
   margin: auto;
   display: flex;
-  padding: 3rem 6.25rem;
+  padding: 8rem 6rem;
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  overflow: hidden;
 }
 .faq__title {
   color: #5D4A81;

@@ -2,15 +2,16 @@
 
 .faq {
     position: relative;
-    .container-section {
-     max-width: 1500px;
-     margin: auto;
-    display: flex;
-    padding: 3rem 6.25rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
     overflow: hidden;
+
+    .container-section {
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        padding: 8rem 6rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 
     &__title {
@@ -79,8 +80,9 @@
 
     @media (max-width: 1150px) {
         .container-section {
-        padding: 4rem 2rem;
+            padding: 4rem 2rem;
         }
+
         .faq__decor {
             right: -300px;
         }
