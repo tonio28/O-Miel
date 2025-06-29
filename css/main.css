@@ -680,13 +680,13 @@ header.open {
 }
 @media (max-width: 1150px) {
   .faq .container-section {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
   }
   .faq .faq__decor {
     right: -300px;
   }
   .faq .faq__list {
-    padding: 0;
+    padding: 1rem;
   }
 }
 @media (max-width: 768px) {
